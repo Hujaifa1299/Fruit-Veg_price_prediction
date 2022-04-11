@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h1>Flipkart Mobile Brand Price Prediction </h1>
+    <form action="{{ url_for("gfg")}}" method="post">
+
+    <label for="category"> Category:</label>
+    <select id="category" name="category">
+    <option value="1">fruit </option>
+    <option value="3">vegetable </option>
+     <option value="0">cut_flowers </option>
+        <option value="2">pot_plants </option>
+
+    </select>
+
+    <label for="item"> Item:</label>
+    <select id="item" name="item">
+    <option value="1">apples </option>
+    <option value="35">pears </option>
+     <option value="4">beetroot </option>
+        <option value="7">brussels_sprouts </option>
+        <option value="33">pak_choi </option>
+        <option value="21">curly_kale </option>
+        <option value="8">cabbage </option>
+        <option value="44">spring_greens </option>
+        <option value="11">carrots </option>
+        <option value="12">cauliflower </option>
+        <option value="13">celeriac </option>
+        <option value="20">cucumbers </option>
+        <option value="27">leeks </option>
+        <option value="28">lettuce </option>
+        <option value="32">onion </option>
+        <option value="47">swede </option>
+        <option value="52">turnip </option>
+        <option value="34">parsnips </option>
+        <option value="41">rhubarb </option>
+        <option value="51">tulips </option>
+        <option value="10">capsicum </option>
+        <option value="16">chinese_leaf </option>
+        <option value="14">celery </option>
+        <option value="50">tomatoes </option>
+        <option value="18">coriander </option>
+        <option value="43">spinach_leaf </option>
+        <option value="40">raspberries </option>
+        <option value="9">calabrese </option>
+        <option value="46">strawberries </option>
+        <option value="5">blackberries </option>
+        <option value="42">rocket </option>
+        <option value="30">mixed_babyleaf_salad </option>
+        <option value="25">gladioli </option>
+        <option value="49">sweetcorn </option>
+        <option value="22">currants </option>
+        <option value="6">blueberries </option>
+        <option value="3">beans </option>
+        <option value="19">courgettes </option>
+        <option value="38">plums </option>
+        <option value="36">peas </option>
+        <option value="15">cherries </option>
+        <option value="26">gooseberries </option>
+        <option value="2">asparagus </option>
+        <option value="53">watercress </option>
+        <option value="0">alstromeria </option>
+        <option value="29">lillies </option>
+        <option value="31">narcissus </option>
+        <option value="23">cyclamen </option>
+        <option value="39">poinsettia </option>
+        <option value="17">chrysanthemum </option>
+        <option value="24">geranium </option>
+        <option value="45">stocks </option>
+        <option value="48">sweet_williams </option>
+        <option value="37">peony </option>
+
+    </select>
+
+    <label for="variety"> Variety:</label>
+    <select id="variety" name="variety">
+    <option value="12">bramleys_seedling </option>
+    <option value="26">coxs_orange_group </option>
+     <option value="32">egremont_russet </option>
+        <option value="11">braeburn </option>
+        <option value="35">gala </option>
+        <option value="45">other_late_season </option>
+        <option value="22">conference </option>
+        <option value="30">doyenne_du_comice </option>
+        <option value="7">beetroot </option>
+        <option value="14">brussels_sprouts </option>
+        <option value="48">pak_choi </option>
+        <option value="29">curly_kale </option>
+        <option value="55">red </option>
+        <option value="61">savoy </option>
+        <option value="53">prepacked </option>
+        <option value="75">white </option>
+        <option value="58">round_green_other </option>
+        <option value="69">topped_washed </option>
+        <option value="2">all </option>
+        <option value="19">celeriac </option>
+        <option value="28">cucumbers </option>
+        <option value="70">trimmed </option>
+        <option value="17">butterhead_indoor </option>
+        <option value="40">little_gem </option>
+        <option value="15">bulb_brown </option>
+        <option value="16">bulb_red </option>
+        <option value="66">swede </option>
+        <option value="72">turnip </option>
+        <option value="4">all_varieties </option>
+        <option value="34">forced </option>
+        <option value="47">outdoor </option>
+        <option value="71">tulips </option>
+        <option value="21">chinese_leaf </option>
+        <option value="46">other_mid_season </option>
+        <option value="65">summer_autumn_pointed </option>
+        <option value="5">all_washed </option>
+        <option value="74">vine </option>
+        <option value="43">other </option>
+        <option value="23">coriander </option>
+        <option value="41">loose_bunches </option>
+        <option value="54">raspberries </option>
+        <option value="18">calabrese </option>
+        <option value="37">green </option>
+        <option value="44">other_early_season </option>
+        <option value="64">strawberries </option>
+        <option value="33">elongated </option>
+        <option value="24">cos </option>
+        <option value="57">round </option>
+        <option value="20">cherry </option>
+        <option value="9">blackberries </option>
+        <option value="27">crisp_iceberg_type </option>
+        <option value="56">rocket </option>
+        <option value="50">pillow_pack </option>
+        <option value="68">sweetcorn </option>
+        <option value="10">blueberries </option>
+        <option value="13">broad </option>
+        <option value="31">dwarf_french_or_kidney </option>
+        <option value="59">runner_climbing </option>
+        <option value="25">courgettes </option>
+        <option value="60">saladspring </option>
+        <option value="3">all_other </option>
+        <option value="62">shelling_all_varieties </option>
+        <option value="8">black </option>
+        <option value="73">victoria </option>
+        <option value="52">plum </option>
+        <option value="36">gooseberries </option>
+        <option value="76">yelloworange </option>
+        <option value="6">asparagus </option>
+        <option value="51">pillow_packs </option>
+        <option value="38">indoor </option>
+        <option value="42">oriental </option>
+        <option value="0">13_cm </option>
+        <option value="39">indoor_spray </option>
+        <option value="63">stocks </option>
+        <option value="67">sweet_williams </option>
+        <option value="49">peony </option>
+        <option value="1">9_cm </option>
+
+    </select>
+
+
+<button type="submit">Search</button>
+</body>
+</html>
